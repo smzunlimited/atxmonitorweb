@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 255; /* Change this to set the font color to blue */
+  --background-start-rgb: 255, 255, 255; /* Change this to set the background color to white */
+  --background-end-rgb: 255, 255, 255; /* Change this to set the background color to white */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(
+    var(--background-start-rgb)
+  ); /* Remove the gradient and use a solid color */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

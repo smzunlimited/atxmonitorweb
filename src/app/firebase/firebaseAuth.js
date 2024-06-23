@@ -1,3 +1,5 @@
+// firebaseAuth.js
+
 import {
   getAuth,
   signInWithPopup,

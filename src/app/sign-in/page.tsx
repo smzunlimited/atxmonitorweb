@@ -30,7 +30,7 @@ const SignInPage = () => {
           // User exists in Firestore, navigate to the dashboard
           setEmail("");
           setPassword("");
-          router.push("/dashboard");
+          router.push("/device");
         } else {
           // User doesn't exist in Firestore, display an error message
           console.error("User not found in Firestore");
@@ -62,7 +62,7 @@ const SignInPage = () => {
         if (userDoc) {
           const typedUserDoc = userDoc as UserDoc;
           if (typedUserDoc.username && typedUserDoc.email) {
-            router.push("/dashboard");
+            router.push("/device");
           } else {
             router.push("/sign-up?fromGoogle=true");
           }

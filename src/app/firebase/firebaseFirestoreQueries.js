@@ -90,6 +90,22 @@ class FirebaseFirestore {
     });
     return emails;
   }
+
+  // Get devices
+  // Get or create a device document for a user
+  async getOrCreateDeviceDocument(userId, deviceName) {
+    const deviceDocRef = doc(this.db, "user", userId, "device", deviceName);
+    const deviceDocSnap = await getDoc(deviceDocRef);
+
+    if (deviceDocSnap.exists()) {
+      // Device document exists, return the document data
+      return { id: deviceDocSnap.id, ...deviceDocSnap.data() };
+    } else {
+      // Device document doesn't exist, create a new document
+      await setDoc(deviceDocRef, { name: deviceName });
+      return { id: deviceName, name: deviceName };
+    }
+  }
 }
 
 const firebaseFirestore = new FirebaseFirestore();

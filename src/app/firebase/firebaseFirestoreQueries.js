@@ -1,3 +1,5 @@
+//FirebaseFirestoreQueries.js
+
 import { initializeApp, getApps, getApp } from "firebase/app";
 import {
   getFirestore,
@@ -91,7 +93,6 @@ class FirebaseFirestore {
     return emails;
   }
 
-  // Get devices
   // Get or create a device document for a user
   async getOrCreateDeviceDocument(userId, deviceName) {
     const deviceDocRef = doc(this.db, "user", userId, "device", deviceName);

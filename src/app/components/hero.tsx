@@ -14,7 +14,7 @@ function Hero() {
         className="mb-8"
       />
       <h1 className="text-4xl font-bold text-blue-600 mb-4">
-        Welcome to AtxExpert
+        Welcome to ATXpert
       </h1>
       <p className="text-gray-600 mb-8">Press to continue</p>
       <button

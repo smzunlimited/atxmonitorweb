@@ -80,7 +80,7 @@ const SignUpPage = () => {
         <a href="/">
           <span className="sr-only">Home</span>
           <span className="text-2xl font-semibold">
-            <span className="ml-24 text-[#083b56]">ATXExpert</span>
+            <span className="ml-24 text-[#083b56]">ATXpert</span>
           </span>
         </a>
       </div>

@@ -97,7 +97,7 @@ const SelectDevicePage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="bg-white flex items-center justify-start w-full py-3 px-6 shadow-md">
-        <span className="text-2xl font-semibold text-[#083b56]">ATXExpert</span>
+        <span className="text-2xl font-semibold text-[#083b56]">ATXpert</span>
       </div>
       <div className="flex-grow flex flex-col p-6">
         <div className="mb-8">
